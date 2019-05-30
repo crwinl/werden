@@ -22,5 +22,5 @@ serviceWorker.unregister();
 /**
  * for demo
  *
-//ReactDOM.render(<HelloWorld />, document.getElementById('root'));
+ReactDOM.render(<HelloWorld />, document.getElementById('root'));
  */
