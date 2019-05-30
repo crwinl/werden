@@ -2,9 +2,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+var name = "vitah";
+const element = <h1>Hello,{name}</h1>
+
 function HelloWorld() {
     return ReactDOM.render(
-        <h1>Hello world</h1>,
+        element,
         document.getElementById('root')
     )
 }
