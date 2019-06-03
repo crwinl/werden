@@ -4,10 +4,12 @@ import './App.css';
 import logo from './logo.svg';
 
 import PostDetail from './views/post/index';
+import Home from './views/home/index';
 
 function App() {
   function handleClick(e) {
-    ReactDOM.render(<PostDetail />, document.getElementById('root'));
+    //ReactDOM.render(<PostDetail />, document.getElementById('root'));
+    ReactDOM.render(<Home />, document.getElementById('root'));
   }
 
   return (
