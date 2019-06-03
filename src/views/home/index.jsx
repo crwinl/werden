@@ -35,6 +35,7 @@ class Home extends Component {
             'created_at': "19992-12-25"
         }];
 
+        post_list = [];
         this.setState({
             post_list: post_list
         });
@@ -49,7 +50,7 @@ class Home extends Component {
         if (this.state.post_list.length === 0) {
             return (
                 <div className="no-data">
-                    <Empty />
+                    <Empty description="没有数据啊 大哥～" />
                 </div>
             );
         }
