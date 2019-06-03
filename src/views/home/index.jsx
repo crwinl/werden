@@ -1,11 +1,15 @@
 
 import React from 'react';
+import {
+    Component,
+    Fragment
+} from 'react';
 
 import {
     Empty,
 } from 'antd';
 
-class Home extends React.Component {
+class Home extends Component {
 
     state = {
         post_list: [],
@@ -41,8 +45,8 @@ class Home extends React.Component {
 
         return (
             <div className="content-inner-wrapper home">
-                <React.Fragment>
-                </React.Fragment>
+                <Fragment>
+                </Fragment>
             </div>
         );
     }
