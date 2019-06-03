@@ -30,6 +30,7 @@ class Home extends React.Component {
     }
 
     render() {
+        // 列表为空的显示内容
         if (this.state.post_list.length === 0) {
             return (
                 <div className="no-data">
