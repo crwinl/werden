@@ -36,14 +36,14 @@ class Home extends React.Component {
                     <Empty />
                 </div>
             );
-        } else {
-            return (
-                <div className="content-inner-wrapper home">
-                    <React.Fragment>
-                    </React.Fragment>
-                </div>
-            );
         }
+
+        return (
+            <div className="content-inner-wrapper home">
+                <React.Fragment>
+                </React.Fragment>
+            </div>
+        );
     }
 }
 
