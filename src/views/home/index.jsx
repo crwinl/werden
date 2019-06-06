@@ -1,14 +1,8 @@
 
 import React from 'react';
-import {
-    Component,
-    Fragment
-} from 'react';
+import { Component, Fragment } from 'react';
 
-import {
-    Empty,
-    Divider
-} from 'antd';
+import { Empty, Divider } from 'antd';
 
 
 class Home extends Component {

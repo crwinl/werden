@@ -1,9 +1,8 @@
 
 import React from 'react';
-//import ReactDOM from 'react-dom';
+import { Component } from 'react';
 
-
-class PostDetail extends React.Component {
+class PostDetail extends Component {
 
     state = {
         title: '',
