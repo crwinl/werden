@@ -1,23 +1,21 @@
 import React from 'react';
 import {
-  Component
-} from 'react';
-import ReactDOM from 'react-dom';
-import {
+  BrowserRouter,
   Route,
   Switch
 } from 'react-router-dom';
 
-import PostDetail from './views/post/index';
 import Home from './views/home/index';
 
-
-class App extends Comment {
-
-  componentDidMount() {
-  }
-
+class App extends React.Component {
   render() {
+    return (
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/" component={Home} />
+        </Switch>
+      </BrowserRouter>
+    );
   }
 }
 
