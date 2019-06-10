@@ -43,7 +43,7 @@ class Home extends Component {
         // 列表为空的显示内容
         if (this.state.post_list.length === 0) {
             return (
-                <div className="no-data">
+                <div className="no-content">
                     <Empty description="没有数据啊 大哥～" />
                 </div>
             );
