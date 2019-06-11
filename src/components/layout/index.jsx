@@ -12,6 +12,7 @@ class WebLayout extends Component {
                 <Row className="main-wrapper">
                     <Col {...contentLayout}>
                         <div className="content-wrapper">
+                            {this.props.children}
                         </div>
                     </Col>
                 </Row>

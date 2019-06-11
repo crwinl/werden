@@ -6,14 +6,17 @@ import {
 } from 'react-router-dom';
 
 import Home from './views/home/index';
+import Layout from './components/layout';
 
 class App extends React.Component {
   render() {
     return (
       <BrowserRouter>
-        <Switch>
-          <Route exact path="/" component={Home} />
-        </Switch>
+        <Layout>
+          <Switch>
+            <Route exact path="/" component={Home} />
+          </Switch>
+        </Layout>
       </BrowserRouter>
     );
   }
