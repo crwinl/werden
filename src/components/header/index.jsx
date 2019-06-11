@@ -6,6 +6,8 @@ import {
     Col
 } from 'antd';
 
+import HeaderLeft from './headerLeft';
+
 const BlogHeader = () => {
     const responsiveLeft = { xxl: 4, xl: 5, lg: 5, sm: 4, xs: 24 }
     const responsiveRight = { xxl: 20, xl: 19, lg: 19, sm: 20, xs: 0 }
@@ -14,10 +16,7 @@ const BlogHeader = () => {
         <Layout.Header className="header-container">
             <Row>
                 <Col {...responsiveLeft}>
-                    测试1
-                </Col>
-                <Col {...responsiveRight}>
-                    测试2
+                    <HeaderLeft />
                 </Col>
             </Row>
         </Layout.Header>
