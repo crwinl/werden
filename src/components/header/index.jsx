@@ -14,8 +14,10 @@ const BlogHeader = () => {
         <Layout.Header className="header-container">
             <Row>
                 <Col {...responsiveLeft}>
+                    测试1
                 </Col>
                 <Col {...responsiveRight}>
+                    测试2
                 </Col>
             </Row>
         </Layout.Header>

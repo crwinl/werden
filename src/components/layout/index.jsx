@@ -1,9 +1,9 @@
 import React from 'react';
 import { Component } from 'react';
 import './index.less';
-import { Layout, Row, Col } from 'antd';
+import { Layout, Row, Col, Header } from 'antd';
 
-import Header from '../header';
+import BlogHeader from '../header';
 
 class WebLayout extends Component {
     render() {
@@ -11,7 +11,9 @@ class WebLayout extends Component {
 
         return (
             <Layout className="app-container">
-                <Header />
+                <Layout.Header>
+                    <BlogHeader />
+                </Layout.Header>
                 <Row className="main-wrapper">
                     <Col {...contentLayout}>
                         <div className="content-wrapper">
