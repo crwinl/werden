@@ -6,6 +6,8 @@ import {
     Col
 } from 'antd';
 
+const Header = Layout.Header;
+
 const navList = [
     {
         icon: 'home',
@@ -34,14 +36,14 @@ const BlogHeader = () => {
     const responsiveRight = { xxl: 20, xl: 19, lg: 19, sm: 20, xs: 0 }
 
     return (
-        <Layout.Header className="header-contaienr">
+        <Header className="header-container">
             <Row>
                 <Col {...responsiveLeft}>
                 </Col>
                 <Col {...responsiveRight}>
                 </Col>
             </Row>
-        </Layout.Header>
+        </Header>
     )
 }
 
