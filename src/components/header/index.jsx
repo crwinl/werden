@@ -43,7 +43,7 @@ const BlogHeader = () => {
                     <HeaderLeft />
                 </Col>
                 <Col {...responsiveRight}>
-                    <HeaderNav navList={navList} />>
+                    <HeaderNav navList={navList} />
                 </Col>
             </Row>
         </Layout.Header>
