@@ -10,7 +10,18 @@ class LeftSider extends React.Component {
     }
 
     componentDidMount() {
-        let tagList = [];
+        let tagList = [
+            { "name": "标签1" },
+            { "name": "标签2" },
+            { "name": "标签3" },
+            { "name": "标签4" },
+            { "name": "标签5" },
+            { "name": "标签6" },
+            { "name": "标签7" },
+            { "name": "标签8" },
+            { "name": "标签9" },
+            { "name": "标签10" },
+        ];
         this.setState({
             tagList: tagList
         })
