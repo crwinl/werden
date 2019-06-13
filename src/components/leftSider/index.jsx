@@ -39,7 +39,7 @@ class LeftSider extends React.Component {
                         <Icon type="github" />
                         <a target="_blank" rel="noreferrer noopener" href="https://github.com/vitahlin">
                             Github
-            </a>
+                        </a>
                     </li>
                 </ul>
 
