@@ -41,6 +41,12 @@ class LeftSider extends React.Component {
                             Github
                         </a>
                     </li>
+                    <li>
+                        <Icon type="mail" />
+                        <a href="mailto:linw1225@gmail.com">
+                            Mail
+                        </a>
+                    </li>
                 </ul>
 
                 {
