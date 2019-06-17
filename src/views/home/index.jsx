@@ -74,8 +74,7 @@ class Home extends Component {
                                         </span>
                                     </Divider>
 
-                                    <div className="article-detail description">
-                                        {post.content}
+                                    <div className="article-detail description" dangerouslySetInnerHTML={{ __html: post.content }}>
                                     </div>
                                 </li>
                             ))
