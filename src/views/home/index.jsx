@@ -5,6 +5,9 @@ import { Component, Fragment } from 'react';
 import { Empty, Divider } from 'antd';
 
 
+import { transMakrdown } from '../../lib/markdown';
+
+
 class Home extends Component {
 
     state = {
@@ -74,7 +77,7 @@ class Home extends Component {
                                         </span>
                                     </Divider>
 
-                                    <div className="article-detail description" dangerouslySetInnerHTML={{ __html: post.content }}>
+                                    <div className="article-detail description" dangerouslySetInnerHTML={{ __html: transMakrdown(post.content) }}>
                                     </div>
                                 </li>
                             ))
