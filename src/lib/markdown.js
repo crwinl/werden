@@ -1,4 +1,6 @@
 import marked from 'marked';
+import hljs from 'highlight.js'
+import 'highlight.js/styles/github.css';
 
 function transMakrdown(content) {
     marked.setOptions({
@@ -8,7 +10,10 @@ function transMakrdown(content) {
         tables: true,
         breaks: true,
         smartLists: true,
-        smartypants: true
+        smartypants: true,
+        highlight: function (code) {
+            return hljs.highlightAuto(code).value;
+        }
     });
     return marked(content);
 }

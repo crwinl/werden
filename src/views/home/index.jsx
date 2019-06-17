@@ -34,7 +34,7 @@ class Home extends Component {
         {
             id: 2,
             'title': "aajaj",
-            'content': "# a \n - a \n - b \n \n 测试代码`aaa`测试代码",
+            'content': "# a \n - a \n - b \n \n 测试代码 `aaa` 测试代码 \n```c \n int a;\n ```",
             'created_at': "19992-12-25"
         }
         ];
