@@ -34,7 +34,7 @@ class Home extends Component {
         {
             id: 2,
             'title': "aajaj",
-            'content': "ajajajajajajjs",
+            'content': "# a \n - a \n - b",
             'created_at': "19992-12-25"
         }
         ];
