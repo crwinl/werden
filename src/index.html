@@ -63,7 +63,7 @@
 
 
         <!-- 博客列表-->
-        <ul class="list-group">
+        <ul class="list-group" id="listGroup">
           <li class="list-group-item">
 
             <!-- Blog Post -->
@@ -177,6 +177,39 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script>
+    $(function() {
+      var listGroup = $('#listGroup');
+      $.ajax({
+        url: "api",
+        type: "GET",
+        data: "",
+        dataType: "json",
+        success: function(response) {
+          var listData = response.listData;
+          var listHtml = '';
+          $.each(listData, function(index, itemData) {
+            listHtml += '<li class="list-group-item">' +
+                          '<div class="card mb-4">' +
+                            '<img class="card-img-top" src="' + itemData.img + '" alt="Card image cap">' +
+                            '<div class="card-body">' +
+                              '<h2 class="card-title">' + itemData.title + '</h2>' +
+                              '<p class="card-text">' +
+                              itemData.text +
+                              '</p>' +
+                              '<a href="' + itemData.url + '" class="btn btn-primary">Read More &rarr;</a>' +
+                            '</div>' +
+                            '<div class="card-footer text-muted">Posted on January 1, 2020 by <a href="#">Start Bootstrap</a></div>' +
+                          '</div>' +
+                         '</li>';
+             
+            });
+           listGroup.html(listHtml);
+          };
+        },
+      })
+    });
+  </script>
 
 </body>
 
